@@ -58,7 +58,7 @@ with left_column_1:
     numdays = st.slider('Select Date Range', 0, 100, 3)
 
 with center_column_1:
-    state_inp = st.selectbox('Select State', [""] + valid_states)
+    state_inp = st.selectbox('Select State', [""] + valid_states, index=30)
     if state_inp != "":
         mapping_df = filter_column(mapping_df, "state_name", state_inp)
 
@@ -70,7 +70,7 @@ mapping_dict = pd.Series(mapping_df["district id"].values,
 unique_districts = list(mapping_df["district name"].unique())
 unique_districts.sort()
 with right_column_1:
-    dist_inp = st.selectbox('Select District', unique_districts)
+    dist_inp = st.selectbox('Select District', unique_districts, index=16)
 
 DIST_ID = mapping_dict[dist_inp]
 
@@ -118,7 +118,7 @@ if (final_df is not None) and (len(final_df)):
 
     with center_column_2:
         valid_age = [18, 45]
-        age_inp = st.selectbox('Select Minimum Age', [""] + valid_age)
+        age_inp = st.selectbox('Select Minimum Age', [""] + valid_age, index=2),
         if age_inp != "":
             final_df = filter_column(final_df, "Minimum Age Limit", age_inp)
 
@@ -136,7 +136,7 @@ if (final_df is not None) and (len(final_df)):
 
     with right_column_2b:
         valid_vaccines = ["COVISHIELD", "COVAXIN"]
-        vaccine_inp = st.selectbox('Select Vaccine', [""] + valid_vaccines)
+        vaccine_inp = st.selectbox('Select Vaccine', [""] + valid_vaccines, index=1)
         if vaccine_inp != "":
             final_df = filter_column(final_df, "Vaccine", vaccine_inp)
 
