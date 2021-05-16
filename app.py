@@ -143,6 +143,12 @@ if (final_df is not None) and (len(final_df)):
     table = deepcopy(final_df)
     table.reset_index(inplace=True, drop=True)
     st.table(table)
+
+    geo_df = pd.DataFrame(
+        np.random.randn(1000, 2) / [50, 50] + [26.912, 75.4],
+        columns=['lat', 'lon'])
+    
+    st.map(geo_df)
 else:
     st.error("Unable to fetch data currently, please try after sometime")
 
