@@ -130,7 +130,7 @@ if (final_df is not None) and (len(final_df)):
 
     with right_column_2a:
         valid_capacity = ["Available"]
-        cap_inp = st.selectbox('Select Availablilty', [""] + valid_capacity)
+        cap_inp = st.selectbox('Select Availablilty', [""] + valid_capacity, index=1)
         if cap_inp != "":
             final_df = filter_capacity(final_df, "Available Capacity", 0)
 
@@ -144,11 +144,12 @@ if (final_df is not None) and (len(final_df)):
     table.reset_index(inplace=True, drop=True)
     st.table(table)
 
-    geo_df = pd.DataFrame(
-        np.random.randn(1000, 2) / [50, 50] + [26.912, 75.4],
-        columns=['lat', 'lon'])
-    
-    st.map(geo_df)
+    geo_df = pd.read_csv("hospital_lat_long.csv")
+    geo_df = geo_df[geo_df['lat'].notna()]
+
+    map_df= pd.merge(final_df, geo_df, on='Hospital Name')
+  
+    st.map(map_df)
 else:
     st.error("Unable to fetch data currently, please try after sometime")
 
