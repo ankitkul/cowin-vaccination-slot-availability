@@ -1,82 +1,33 @@
 ﻿pincode,Hospital Name,district,block_name,lat,lon
-303120,Amloda Phc,Jaipur I,Virat Nagar,,
 303103,UPHC NIRMAN NAGAR MHA,Jaipur I,Jaipur I Urban,26.87082592,75.77792867
-303102,Beelwadi PHC,Jaipur I,Virat Nagar,,
-303102,PHC BALESHAR,Jaipur I,Virat Nagar,,
-303103,PHC SAIWAD,Jaipur I,SHAHPURA,,
 302006,Railway Session Site 45 ABOVE,Jaipur I,Jaipur I Urban,,
-302012,Dhankya,Jaipur I,Sirsi,,
-303119,Phc Bagawas Ahiran,Jaipur I,Virat Nagar,,
-303102,Viratnagar CHC,Jaipur I,Virat Nagar,,
-303106,PHC Badnagar,Jaipur I,Virat Nagar,,
-303701,CHC JALSU,Jaipur I,Amer,,
 302004,ISOLATION SMS HOSPITAL (IDH),Jaipur I,Jaipur I Urban,26.90727186,75.81663543
-303107,Dantil Phc,Jaipur I,Kotputli,,
 302039,CD MURLIPURA MHA,Jaipur I,Jaipur I Urban,,
-303007,PHC Begas,Jaipur I,Sirsi,,
-303108,HWC SARDR ZANANA KOTPUTLI,Jaipur I,Kotputli,,
-302012,UCHC SIRSI,Jaipur I,Sirsi,,
-303106,PHC JAISINGHPURA,Jaipur I,Virat Nagar,,
-303806,Samod Chc,Jaipur I,Govindgarh,,
 302005,Vidhan Sabha Only Staff Member,Jaipur I,Jaipur I Urban,,
-303108,PHC Gonera Kotputli,Jaipur I,Kotputli,,
-303804,HWC Phc Dhanota,Jaipur I,SHAHPURA,,
-303110,Panchudala PHC,Jaipur I,Virat Nagar,,
-303601,PHC HANUTPURA,Jaipur I,SHAHPURA,,
 303103,UPHC DEVI NAGAR,Jaipur I,Jaipur I Urban,26.95604612,75.764766
-303806,HWC PHC DHAWALI,Jaipur I,SHAHPURA,,
-303702,HWC UPHC CHOMU,Jaipur I,Govindgarh,,
-303105,Shuklawas Phc,Jaipur I,Kotputli,,
-303003,PHC TEVDI,Jaipur I,Virat Nagar,,
-303103,PHC DEVAN,Jaipur I,SHAHPURA,,
-303601,CHC AMARSAR,Jaipur I,SHAHPURA,,
-303803,KARIRI PHC 1,Jaipur I,SHAHPURA,,
-303002,Achrol 1,Jaipur I,Amer,,
-303103,CHC Shahpura,Jaipur I,SHAHPURA,,
-303601,NAYAN PHC,Jaipur I,SHAHPURA,,
-303103,Phc Khora Ladkhani,Jaipur I,SHAHPURA,,
-303119,Bhabhru Phc,Jaipur I,Virat Nagar,,
-303001,Andhi CHC 1,Jaipur I,Jamwa Ramgarh,,
-303119,Phc Antela,Jaipur I,Virat Nagar,,
-302016,TB Hospital 1,Jaipur I,Jaipur I Urban,,
-303706,Kalwar 11,Jaipur I,Sirsi,,
-303803,FLW KHEJROLI 1,Jaipur I,Govindgarh,,
-303104,CHC MANOHARPUR,Jaipur I,SHAHPURA,,
+302016,TB Hospital 1,Jaipur I,Jaipur I Urban,26.93795895,75.79409065
 302003,Heart And General Hospital,Jaipur I,Jaipur I Urban,26.909293,75.81104072
-303901,Phc Mahadevpura Cvc 1,Jaipur II,Chakshu,,
+302004,Soni Hospital,Jaipur I,Jaipur I Urban,26.8961054,75.81481355
+302002,National Institute Of Ayurved,Jaipur I,Jaipur I Urban,26.9348821,75.83193533
+302001,Gangori PDDU Hospital UHC 1,Jaipur I,Jaipur I Urban,26.9311364,75.82047862
+302016,Ruhs Govt Dental College,Jaipur I,Jaipur I Urban,26.93806894,75.79321227
+302016,HBX Kanwatiya OTH,Jaipur I,Jaipur I Urban,26.94522675,75.79803963
+302005,Covaxin VidhanSabha Only Staff,Jaipur I,Jaipur I Urban,,
+302034,Covaxin Shallby Hospital,Jaipur I,Jaipur I Urban,26.9036515,75.72932627
+302004,SMS Hospital 4 Dhanwantri 5th,Jaipur I,Jaipur I Urban,26.90870476,75.81625443
+302004,SMS Medical College Hospital,Jaipur I,Jaipur I Urban,26.90727186,75.81663543
+302016,FLW SETELIGHT BANIPARK,Jaipur I,Jaipur I Urban,26.92957032,75.7974568
+302001,Zanana Hospital Site 1,Jaipur I,Jaipur I Urban,26.92697981,75.80662217
+302006,Military Hospital 1,Jaipur I,Jaipur I Urban,,
 302003,Khonagorian Cvc,Jaipur II,Jaipur II Urban,,
-303128,Jobner Phc,Jaipur II,Sambhar,,
-303128,Jobner Phc,Jaipur II,Sambhar,,
-302029,Watika PHC CVC,Jaipur II,Sanganer,,
-302029,Watika PHC CVC,Jaipur II,Sanganer,,
-303903,Titaria,Jaipur II,Chakshu,,
-303905,RUHS Site1,Jaipur II,Sanganer,,
-303009,JHAG CVC,Jaipur II,Dudu,,
-303602,Bhadal Phc Cvc,Jaipur II,Sambhar,,
-303602,Bhadal Phc Cvc,Jaipur II,Sambhar,,
 302026,UPHC JAHGATPURA CVC,Jaipur II,Jaipur II Urban,,
-302026,UPHC JAHGATPURA CVC,Jaipur II,Jaipur II Urban,,
-303908,Phc Dehlala 1,Jaipur II,Chakshu,,
 302018,Medical College Jaipuriya CVC,Jaipur II,Jaipur II Urban,,
-303603,Kishangargrenwal CVC,Jaipur II,Sambhar,,
-303603,Kishangargrenwal CVC,Jaipur II,Sambhar,,
-303005,Phagi CHC CVC,Jaipur II,Phagi,,
 302017,UPHC INDIRA GANDHI NAGAR CVC,Jaipur II,Jaipur II Urban,,
-302017,UPHC INDIRA GANDHI NAGAR CVC,Jaipur II,Jaipur II Urban,,
-302029,Kho Khawas Cvc,Jaipur II,Sanganer,,
-303901,Chaksu CVC,Jaipur II,Chakshu,,
-303903,Chandlai PHC CVC,Jaipur II,Chakshu,,
-302019,UPHC Gurjar Ki Thadi Cvc,Jaipur II,Sanganer,,
-302019,UPHC Gurjar Ki Thadi Cvc,Jaipur II,Sanganer,,
-303901,Kothun CVC,Jaipur II,Chakshu,,
-303328,Mandabheem Singh Cvc,Jaipur II,Sambhar,,
 302020,Mansarovar Sec 8 CVC,Jaipur II,Jaipur II Urban,,
 302011,Uphc Sachivalya Cvc,Jaipur II,Jaipur II Urban,,
-303905,BEELWA PHC SITE1,Jaipur II,Sanganer,,
-303905,GONER PHCSITE1,Jaipur II,Sanganer,,
 302033,Pratap Nagar Sector. 6 Cvc,Jaipur II,Jaipur II Urban,,
-303905,Dadiya Phc Cvc,Jaipur II,Sanganer,,
 302033,UPSC Luniyavas Cvc,Jaipur II,Jaipur II Urban,,
-303338,Phulera CHC CVC,Jaipur II,Sambhar,,
-303603,Karansar Phc Cvc,Jaipur II,Sambhar,,
-302026,Bhankrota Phc,Jaipur II,Sanganer,,
+302018,Raghu Vihar Cvc,Jaipur II,Jaipur II Urban,26.85380224,75.78499593
+302017,Fortis Hospital CVC 1,Jaipur II,Jaipur II Urban,26.84716837,75.80341912
+302020,UPHC Radheshyam Kandoi,Jaipur II,Jaipur II Urban,,
+302039,Manipal Hospitall,Jaipur I,Jaipur I Urban,26.96981146,75.77364265

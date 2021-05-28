@@ -140,6 +140,12 @@ if (final_df is not None) and (len(final_df)):
         if vaccine_inp != "":
             final_df = filter_column(final_df, "Vaccine", vaccine_inp)
 
+    #valid_blockname = ["Jaipur I Urban", "Jaipur II Urban"]
+    valid_blockname = list(np.unique(final_df["Block Name"].values))
+    blockname_inp = st.selectbox('Select Block Name', [""] + valid_blockname)
+    if blockname_inp != "":
+        final_df = filter_column(final_df, "Block Name", blockname_inp)   
+
     table = deepcopy(final_df)
     table.reset_index(inplace=True, drop=True)
     st.table(table)
