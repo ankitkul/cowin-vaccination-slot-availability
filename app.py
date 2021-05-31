@@ -39,6 +39,8 @@ rename_mapping = {
     'date': 'Date',
     'min_age_limit': 'Minimum Age Limit',
     'available_capacity': 'Available Capacity',
+    'dose1': 'Dose 1',
+    'dose2': 'Dose 2',
     'vaccine': 'Vaccine',
     'pincode': 'Pincode',
     'name': 'Hospital Name',
@@ -70,7 +72,7 @@ mapping_dict = pd.Series(mapping_df["district id"].values,
 unique_districts = list(mapping_df["district name"].unique())
 unique_districts.sort()
 with right_column_1:
-    dist_inp = st.selectbox('Select District', unique_districts, index=16)
+    dist_inp = st.selectbox('Select District', unique_districts, index=15)
 
 DIST_ID = mapping_dict[dist_inp]
 
@@ -94,8 +96,10 @@ for INP_DATE in date_str:
                 df['min_age_limit'] = df.sessions.apply(lambda x: x['min_age_limit'])
                 df['vaccine'] = df.sessions.apply(lambda x: x['vaccine'])
                 df['available_capacity'] = df.sessions.apply(lambda x: x['available_capacity'])
+                df['dose1'] = df.sessions.apply(lambda x: x['available_capacity_dose1'])
+                df['dose2'] = df.sessions.apply(lambda x: x['available_capacity_dose2'])
                 df['date'] = df.sessions.apply(lambda x: x['date'])
-                df = df[["date", "available_capacity", "vaccine", "min_age_limit", "pincode", "name", "state_name", "district_name", "block_name", "fee_type"]]
+                df = df[["date", "available_capacity", "dose1", "dose2","vaccine", "min_age_limit", "pincode", "name", "state_name", "district_name", "block_name", "fee_type"]]
                 if final_df is not None:
                     final_df = pd.concat([final_df, df])
                 else:
@@ -118,7 +122,7 @@ if (final_df is not None) and (len(final_df)):
 
     with center_column_2:
         valid_age = [18, 45]
-        age_inp = st.selectbox('Select Minimum Age', [""] + valid_age, index=2),
+        age_inp = st.selectbox('Select Minimum Age', valid_age, index=1),
         if age_inp != "":
             final_df = filter_column(final_df, "Minimum Age Limit", age_inp)
 
@@ -140,11 +144,22 @@ if (final_df is not None) and (len(final_df)):
         if vaccine_inp != "":
             final_df = filter_column(final_df, "Vaccine", vaccine_inp)
 
-    #valid_blockname = ["Jaipur I Urban", "Jaipur II Urban"]
-    valid_blockname = list(np.unique(final_df["Block Name"].values))
-    blockname_inp = st.selectbox('Select Block Name', [""] + valid_blockname)
-    if blockname_inp != "":
-        final_df = filter_column(final_df, "Block Name", blockname_inp)   
+    left_column_3, right_column_3 = st.beta_columns(2)
+    
+    with left_column_3:
+        valid_dose = ["First", "Second"]
+        dose_inp = st.selectbox('Select Dose', [""] + valid_dose, index=2)   
+        if dose_inp != "":
+            if dose_inp == "First":
+                final_df = filter_capacity(final_df, "Dose 1", 0)
+            elif dose_inp == "Second":
+                final_df = filter_capacity(final_df, "Dose 2", 0)            
+    
+    with right_column_3:
+        valid_blockname = list(np.unique(final_df["Block Name"].values))
+        blockname_inp = st.selectbox('Select Block Name', [""] + valid_blockname)
+        if blockname_inp != "":
+            final_df = filter_column(final_df, "Block Name", blockname_inp)   
 
     table = deepcopy(final_df)
     table.reset_index(inplace=True, drop=True)
