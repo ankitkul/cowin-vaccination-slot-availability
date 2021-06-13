@@ -122,7 +122,7 @@ if (final_df is not None) and (len(final_df)):
 
     with center_column_2:
         valid_age = [18, 45]
-        age_inp = st.selectbox('Select Minimum Age', valid_age, index=1),
+        age_inp = st.selectbox('Select Minimum Age', valid_age),
         if age_inp != "":
             final_df = filter_column(final_df, "Minimum Age Limit", age_inp)
 
@@ -148,7 +148,7 @@ if (final_df is not None) and (len(final_df)):
     
     with left_column_3:
         valid_dose = ["First", "Second"]
-        dose_inp = st.selectbox('Select Dose', [""] + valid_dose, index=2)   
+        dose_inp = st.selectbox('Select Dose', [""] + valid_dose, index=1)   
         if dose_inp != "":
             if dose_inp == "First":
                 final_df = filter_capacity(final_df, "Dose 1", 0)
